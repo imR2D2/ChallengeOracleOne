@@ -1,0 +1,169 @@
+body {
+	background: #e5e5e5;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	width: 95%;
+}
+
+header img {
+	margin: 40px 0;
+	position: relative;
+	left: -50px;
+}
+
+#cajaEscribir {
+	width: 65%;
+	background: none;
+	outline: none;
+	border: none;
+	padding: 20px 30px;
+	font-size: 30px;
+	color: #0a3871;
+}
+#cajaEscribir::placeholder {
+	color: #0a3871;
+}
+
+.img {
+	/*Hacemos que se ponga flotante y que todo gire entorno a el  */
+	float: left;
+	/*Lo bajamos un poco porque sale arriba*/
+	margin-top: 4px;
+	margin-right: 12px;
+	margin: 4px 12px 0 20px;
+}
+
+.minusculas {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+/*Botones E y D*/
+.botones {
+	margin-left: 20px;
+}
+
+.encriptar {
+	width: 30%;
+	background: #0a3871;
+	/*Le ponemos padding 0 en los dos lados porque ya definimos un width y se ajusta el texto al centro*/
+	padding: 16px 0;
+	color: white;
+	border-radius: 25px;
+	margin-right: 20px;
+	border: none;
+	cursor: pointer;
+	transition: 1s;
+}
+.encriptar:hover {
+	background: #081f3c;
+}
+
+.desencriptar {
+	width: 30%;
+	background: #d8dfe8;
+	padding: 16px 0;
+	color: #0a3871;
+	border-radius: 25px;
+	border: 2px solid #0a3871;
+	cursor: pointer;
+	margin-right: 20px;
+	transition: 1s;
+}
+.desencriptar:hover,
+.copiar:hover {
+	background: #bbc4da;
+}
+
+.copiar {
+	width: 30%;
+	background: #d8dfe8;
+	padding: 16px 0;
+	color: #0a3871;
+	border-radius: 25px;
+	border: 2px solid #0a3871;
+	display: none;
+	transition: 1s;
+}
+
+.derecha {
+	position: absolute;
+	top: 110px;
+	right: 0;
+	width: 30%;
+	text-align: center;
+	align-items: center;
+}
+
+.imgPersona,
+#ningunMensaje,
+#ingresaTexto {
+	display: block;
+}
+
+.imgPersona {
+	width: 280px;
+	margin: 0 auto;
+}
+
+#cajaMostrar {
+	width: 100%;
+	background: none;
+	outline: none;
+	border: none;
+	font-size: 25px;
+	color: black;
+	display: none;
+}
+
+#ningunMensaje {
+	margin: 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#ingresaTexto {
+	font-size: 22px;
+}
+
+@media screen and (max-width: 480px) {
+	.container {
+		position: relative;
+		margin: 0 auto;
+	}
+	header img {
+		margin: 40px 0;
+		position: relative;
+		left: -25px;
+	}
+
+	.derecha {
+		position: relative;
+		width: 80%;
+		margin: 0px auto;
+	}
+	.encriptar {
+		width: 90%;
+		margin: 6px auto;
+	}
+	.desencriptar {
+		width: 90%;
+		margin: 20px auto;
+	}
+
+	.copiar {
+		width: 90%;
+		margin-top: 6px;
+	}
+
+	.imgPersona {
+		display: none;
+	}
+
+	#ningunMensaje {
+		margin-top: -10px;
+	}
+}
